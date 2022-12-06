@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    src:url('../fonts/MullerMedium.woff') format('woff'),
+        url('../fonts/MullerMedium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/MullerLight.woff') format('woff'),
+        url('../fonts/MullerLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.woff2') format('woff2');
+}
+
+html{
+    font-family: 'Muller';
+}
+
 *{
     box-sizing: border-box;
 }
@@ -20,12 +48,15 @@ body{
     margin-left: auto;
     margin-right: auto;
     max-width: 1168px;
-    border: 1px solid;
 }
 
 .section-height{
     margin-bottom: 25px;
-    border: 1px solid;
+    padding-left: 45px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #363636;
 }
 
 /* header */
@@ -34,29 +65,43 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid;
 }
 
 .header-top-left{
     display: flex;
     align-items: center;
-    border: 1px solid;
+}
+
+.header-phone{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    color: #666;
+    text-decoration: none;
+}
+
+.header-top-right{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #d8ac47;
 }
 
 .header-logo{
     margin-right: 20px;
-    border: 1px solid;
 }
 
 .header-nav {
     height: 70px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 12px;
 }
 
 .header-nav-list{
@@ -64,6 +109,10 @@ body{
     align-items: center;
 }
 .header-nav-item{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #363636;
     margin-right: 37px;
 }
 
@@ -77,16 +126,14 @@ body{
 
 .section-order-left{
     width: 520px;
-    margin-right: auto;
-    border: 1px solid;
 }
 
 .section-order-right{
     width: 595px;
     background-image: url('../img/main/section-order/order-img.jpg');
+    background-size: 595px 520px;
     background-position: bottom;
     background-repeat: no-repeat;
-    border: 1px solid;
 }
 .section-order-right-text {
     width: 334px;
@@ -94,14 +141,45 @@ body{
     margin-top: 262px;
     margin-left: 35px;
     color: white;
-    border: 1px solid;
+}
+
+.sectiont-order-right-nomer{
+    margin-bottom: 35px;
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.section-order-left-price{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #666;
+}
+
+.section-order-right-details{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #f1cb6c;
 }
 
 /* section-about */
 .section-about{
     height: 265px;
     margin-bottom: 50px;
-    border: 1px solid;
+    
+}
+
+.section-about-text{
+    padding-left: 45px;
+    padding-right: 230px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #666;
 }
 
 /* section-servises */
@@ -120,7 +198,28 @@ body{
     height: 325px;
     margin-top: 23px;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+.section-servises-item-text{
+    color: #000;
+    padding-right: 100px;
+    padding-left: 45px;
+}
+
+.section-servises-item-height{
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #be983e;
+}
+
+.section-servises-item-desxription{
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 /* section-advantages */
@@ -142,7 +241,16 @@ body{
     margin-top: 23px;
     padding: 40px;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.section-advantages-item-text{
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color:#363636;
 }
 
 /* section-accommodation */
@@ -162,11 +270,63 @@ body{
     height: 441px;
     margin-top: 23px;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 12px;
 }
 
 .section-accommodation-item-last{
+    padding: 360px 0 0 35px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #fff;
     background-image: url('../img/main/section-accommodation/accommodation_all.jpg');
+}
+
+.section-accommodation-item-content{
+    padding: 35px 40px 0px 40px;
+}
+
+.section-accommodation-item-price, .section-accommodation-item-desxription{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #363636;
+}
+
+.section-accommodation-item-price span,  .section-accommodation-item-desxription span{
+     color: #bdbdbd;
+ }
+
+.section-accommodation-item-price b{
+    font-size: 25px
+}
+
+.section-accommodation-item-rating{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.section-accommodation-item-rating img{
+    margin-right: 2px;
+}
+
+.section-accommodation-item-desxription{
+    margin-bottom: 20px;
+}
+
+.section-accommodation-item-btn{
+    width: 100px;
+    height: 41px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #be983e;
+    border: 1px solid #be983e;
+    border-radius: 12px;
 }
 
 /* section-contact */
@@ -184,19 +344,39 @@ body{
     height: 619px;
     padding: 19px 44px 44px 44px;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 12px;
 }
-
 
 .section-contact-item{
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
-    border: 1px solid;
+    padding: 15px 0;
+    border-bottom: 1px solid #666;
+}
+
+.section-contact-name{
+    font-size: 22px;
+    font-weight: 600;
+    list-style: 32px;
+    color: #666;
 }
 
 .section-contact-description{
     width: 242px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #363636;
+}
+
+.section-contact-description a{
+    text-decoration: none;
+    color:#d8ac47
+}
+
+.section-contact-description span{
+    color: #bdbdbd;
 }
 
 .section-contact-right{
@@ -216,9 +396,14 @@ body{
     width: 214px;
     height: 70px;
     margin-top: 45px;
-    padding: 20px;
+    padding: 25px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #d8ac47;
     text-align: center;
-    border: 1px solid;
+    border: 1px solid #d8ac47;
+    border-radius: 12px;
 }
 
 /* footer  */
@@ -226,40 +411,43 @@ body{
     height: 338;
     margin-bottom: 52px;
     padding: 40px 48px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #fff;
+
     display: flex;
     background-color: #363636;
     background-image: url('../img/footer/footer-sun.png');
     background-position: 725px 107px;
     background-repeat: no-repeat;
-    border: 1px solid;
+    border: 1px solid #363636;
+    border-radius: 12px;
 }
 
 .footer-left{
     width: 315px;
     margin-right: 115px;
-    border: 1px solid;
 }
 
 .footer-center{
     margin-right: 250px;
-    border: 1px solid;
-}
-
-.footer-right{
-    border: 1px solid;
 }
 
 .footer-item-info:not(:last-child){
     margin-bottom: 45px;
 }
 
+.footer-item-info:last-child, .footer-item-contact:not(:first-child) a{
+    line-height: 24px;
+    text-decoration: none;
+    color: #d8ac47;
+}
+
 .footer-item-contact{
     margin-bottom: 35px;
 }
 .footer-item-icon{
-    margin-bottom: 15px;
-}
-
-.section-accommodation-item-btn{
-    color: #be973e;
+    margin-bottom: 10px;
 }
